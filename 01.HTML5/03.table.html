@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body style="margin-left: 100px;">
+    <h1>테이블</h1>
+    <hr>
+    <table border="1" style="width: 300px;">
+        <thead>     <!-- 생략 가능 -->
+            <tr>
+                <th>성명</th><th>점수</th><th>비고</th>  <!-- 굵은 글씨로 가운데 정렬 -->
+            </tr>
+        </thead>
+        <tbody>     <!-- 생략 가능 -->
+            <tr>
+                <td>제임스</td><td>84</td><td rowspan="3">줄단위 셀 병합</td>
+            </tr>
+            <tr>
+                <td>마리아</td><td>84</td>
+            </tr>
+            <tr>
+                <td colspan="2">셀 병합</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
