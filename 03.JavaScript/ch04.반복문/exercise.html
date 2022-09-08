@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 문제</title>
+    <script src="exercise.js"></script>
+    <style>
+        pre { font-size: 30px; }
+        input, button { font-size: 20px; }
+        p   { font-weight: bold; }
+        hr  { margin-top: 30px; margin-bottom: 30px;}
+    </style>
+</head>
+<body style="margin: 50px;">
+    <h3>문제 1. 다이아몬드 그리기</h3>
+    <input type="number" id="num" placeholder="홀수를 입력하세요.">
+    <button onclick="checkOdd()">다이아몬드 그리기</button>
+    <pre id="pre"></pre>
+    <script>
+        function checkOdd() {
+            const num = parseInt(document.getElementById('num').value);
+            if (num > 1 && num % 2 == 1) {
+                ex01();
+            } else {
+                document.getElementById('pre').innerText = '1보다 큰 홀수를 입력하세요.';
+                document.getElementById('num').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
