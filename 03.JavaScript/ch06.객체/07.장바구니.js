@@ -10,7 +10,7 @@ class Product {
         this.price = price;
     }
     toString() {
-        return `제품명: ${this.name}, 가격: ${this.price}`;
+        return `제품명: ${this.name}, \t가격: ${this.price}`;
     }
 }
 const mouse = new Product('마우스', 30000);
@@ -32,15 +32,15 @@ class Cart {
     }
     sum() {
         let totalPrice = 0;
-        for (let cart of this.cart) {
-            totalPrice += cart.quantity * cart.product.price;
+        for (let item of this.cart) {
+            totalPrice += item.quantity * item.product.price;
         }
         return totalPrice;
     }
     toString() {
         let result = '';
-        for (let cart of this.cart) {
-            result += cart.product.toString() + `, 수량: ${cart.quantity}\n`;
+        for (let item of this.cart) {
+            result += item.product.toString() + `,\t수량: ${item.quantity}\n`;
         }
         result += `합계: ${this.sum()}`;
         return result;
