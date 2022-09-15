@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 이벤트</title>
+    <script>
+        function clicked() {
+            alert('버튼2가 클릭되었음.');
+        }
+        window.onload = function() {
+            const button3 = document.getElementById('button3');
+            button3.onclick = function() {
+                alert('버튼3이 클릭되었음.');
+            }
+            
+            const button4 = document.getElementById('button4');
+            button4.addEventListener('click', () => {
+                alert('버튼4가 클릭되었음.');
+            });
+            button4.addEventListener('mouseover', () => {
+                const h3 = document.createElement('h3');
+                const textNode = document.createTextNode('마우스 오버 이벤트 발생');
+                h3.appendChild(textNode);
+                document.body.appendChild(h3);
+            });
+            button4.addEventListener('mouseout', () => {
+                const h3 = document.querySelector('h3');
+                document.body.removeChild(h3);
+            });
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <button onclick="alert('버튼1이 클릭되었음.')">버튼1</button>
+    <button onclick="clicked()">버튼2</button>
+    <button id="button3">버튼3</button>
+    <button id="button4">버튼4</button>
+</body>
+</html>
