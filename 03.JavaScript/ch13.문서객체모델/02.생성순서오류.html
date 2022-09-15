@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성순서 오류</title>
+    <!-- <script>   // 이 코드는 h1, h3 태그가 생성하기 전에 호출했으므로 에러가 발생, 콘솔에서 확인
+        document.querySelector('h1').style.backgroundColor = 'yellow';
+        document.querySelector('h3').style.color = 'red';
+    </script> -->
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h3>Header 3</h3>
+    <script>    // h1, h3 태그가 생성된 이후에 수행되도록 순서를 바꿔주면 OK
+        document.querySelector('h1').style.backgroundColor = 'yellow';
+        document.querySelector('h3').style.color = 'red';
+    </script>
+</body>
+</html>

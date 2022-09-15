@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 조작</title>
+    <script>
+        window.onload = function() {
+            // div 객체 생성
+            let output = '';
+            for (let i=0; i<256; i++) {
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+
+            // 생성된 태그에 스타일 적용
+            const divs = document.querySelectorAll('div');
+            for (let i=0; i<256; i++) {
+                const div = divs[i];
+                div.style.height = '2px';
+                div.style.background = `rgb(${255-i}, ${255-i}, ${255-i})`;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

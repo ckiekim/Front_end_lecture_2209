@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+    <script>
+        function addNode() {
+            const h3 = document.createElement('h3');
+            h3.classList.add('class명1', 'class명2');   // class="class명1 class명2"
+            const textNode = document.createTextNode('홍길동');
+            h3.appendChild(textNode);
+            document.body.appendChild(h3);
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h3><a href="#" onclick="addNode()">당신의 이름은 무엇입니까?</a></h3>
+    <hr>
+</body>
+</html>

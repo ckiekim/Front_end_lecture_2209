@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 조작</title>
+    <script>
+        window.onload = function() {
+            const image = document.getElementById('image');
+            image.src = 'https://picsum.photos/640/360';
+            image.width = 320;
+            image.setAttribute('height', 180);
+
+            const width = image.getAttribute('width');
+            const height = image.getAttribute('height');
+            const info = `width: ${width}, height: ${height}`;
+            document.querySelector('p').innerHTML = info;
+        }
+    </script>
+</head>
+<body>
+    <img id="image">
+    <p></p>
+</body>
+</html>

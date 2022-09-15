@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자 조작</title>
+    <script>
+        function changeText() {
+            const header = document.getElementById('header');
+            const originalText = header.innerHTML;
+            header.innerHTML = '자바스크립트로 변경했어요.<br>';
+            header.innerHTML += `원래는 "${originalText}" 였답니다.`;
+        }
+        function escapeText() {
+            const header = document.getElementById('header');
+            header.innerHTML = '<i>i 태그입니다.</i><br>';
+            header.innerHTML += '&lt;i&gt;i 태그입니다.&lt;/i&gt;';
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h1 id="header">Header 1</h1>
+    <button onclick="changeText()">문자 변경</button>
+    <button onclick="escapeText()">Escape 문자</button>
+</body>
+</html>
