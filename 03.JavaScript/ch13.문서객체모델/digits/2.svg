@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Seoulmetro2_icon.svg">
+  <style
+     id="style833"></style>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="399.23613"
+     inkscape:cy="523.02296"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-object-midpoints="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="레이어 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:0.993;fill:#00a84d;stroke:none;stroke-width:0.353792;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       id="path835"
+       cx="132.29166"
+       cy="132.29167"
+       r="132.11478" />
+    <g
+       aria-label="2"
+       id="text839"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:240.16px;line-height:1.25;font-family:'Noto Sans CJK KR';-inkscape-font-specification:'Noto Sans CJK KR Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.400267">
+      <path
+         d="m 186.68041,208.64287 v -24.25616 h -63.88256 v -0.48032 l 13.44896,-11.76784 c 27.37824,-25.2168 47.07136,-47.31152 47.07136,-74.929924 0,-25.45696 -16.8112,-47.31152 -51.39424,-47.31152 -19.69312,0 -36.744477,6.96464 -48.031998,16.09072 l 8.645761,20.89392 c 7.925277,-6.004 19.452957,-12.96864 33.382237,-12.96864 20.4136,0 27.85856,12.24816 27.85856,26.417604 -0.24016,20.65376 -17.53168,39.38624 -54.276157,73.2488 l -18.492321,17.29152 v 17.77184 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:240.16px;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Semi-Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.400267"
+         id="path1414" />
+    </g>
+  </g>
+</svg>

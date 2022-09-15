@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 시계</title>
+    <script>
+        window.onload = function() {
+            setInterval(() => {
+                const today = new Date();
+                let month = String(today.getMonth()+1);                      // 9월 -> 09
+                month = month.length == 1 ? '0'+month : month;
+                const day = `${today.getDate() < 10 ? '0'+today.getDate() : today.getDate()}`;
+                const weekday = '일월화수목금토'.split('')[today.getDay()];
+                const currentDay = `${today.getFullYear()}-${month}-${day}(${weekday})`;
+
+                const hour = `${today.getHours() < 10 ? '0'+today.getHours() : today.getHours()}`;
+                const minute = `${today.getMinutes() < 10 ? '0'+today.getMinutes() : today.getMinutes()}`;
+                const sec = `${today.getSeconds() < 10 ? '0'+today.getSeconds() : today.getSeconds()}`;
+                const currentTime = `${hour}:${minute}:${sec}`;
+                document.getElementById('date').innerHTML = currentDay;
+                document.getElementById('time').innerHTML = currentTime;
+
+                document.getElementById('t1').src = `digits/${hour[0]}.svg`;
+                document.getElementById('t2').src = `digits/${hour[1]}.svg`;
+                document.getElementById('t3').src = `digits/${minute[0]}.svg`;
+                document.getElementById('t4').src = `digits/${minute[1]}.svg`;
+                document.getElementById('t5').src = `digits/${sec[0]}.svg`;
+                document.getElementById('t6').src = `digits/${sec[1]}.svg`;
+            }, 1000);
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h2 id="date"></h1>
+    <hr>
+    <h1 id="time"></h1>
+    <hr style="margin-bottom: 20px;">
+    <img id="t1" width="100">
+    <img id="t2" width="100">
+    <img src="digits/Colon.jpg" width="100">
+    <img id="t3" width="100">
+    <img id="t4" width="100">
+    <img src="digits/Colon.jpg" width="100">
+    <img id="t5" width="100">
+    <img id="t6" width="100">
+</body>
+</html>

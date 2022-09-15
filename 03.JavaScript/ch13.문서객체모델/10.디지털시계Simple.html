@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 시계</title>
+    <script>
+        window.onload = function() {
+            setInterval(() => {
+                const now = new Date();
+                document.getElementById('date').innerHTML = now.toLocaleDateString();
+                document.getElementById('time').innerHTML = now.toLocaleTimeString();
+            }, 1000);
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h2 id="date"></h1>
+    <hr>
+    <h1 id="time"></h1>
+</body>
+</html>
