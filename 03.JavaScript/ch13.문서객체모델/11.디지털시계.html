@@ -7,7 +7,7 @@
     <title>디지털 시계</title>
     <script>
         window.onload = function() {
-            setInterval(() => {
+            const si = setInterval(() => {
                 const today = new Date();
                 let month = String(today.getMonth()+1);                      // 9월 -> 09
                 month = month.length == 1 ? '0'+month : month;
@@ -29,6 +29,9 @@
                 document.getElementById('t5').src = `digits/${sec[0]}.svg`;
                 document.getElementById('t6').src = `digits/${sec[1]}.svg`;
             }, 1000);
+            setTimeout(() => {
+                clearInterval(si);
+            }, 10000);
         }
     </script>
 </head>
