@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        .box {
+            width:200px; height: 200px; background-color: aqua;
+            position: absolute; left:100px; top:100px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.box').click(function(e) {
+                $(this).animate({left: 1000, top:500}, 1000, function() {
+                    $('p').text('이동 완료');
+                });    // pixel, pixel, millisecond
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <p></p>
+</body>
+</html>

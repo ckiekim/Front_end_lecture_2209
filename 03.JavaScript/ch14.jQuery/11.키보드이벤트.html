@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 이벤트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input').on('keyup', function(e) {
+                $('#keyup').html($(this).val());    // 글자를 입력할 때 마다
+            }).on('change', function(e) {
+                $('#change').html($(this).val());   // 입력하고 엔터를 쳤을 때
+            });
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    입력: <input type="text">
+    <hr>
+    글자 입력할 때 마다 어떤 글자가 입력되었는지: <p id="keyup"></p>
+    글자를 입력하고 엔터를 쳤을 때: <p id="change"></p>
+</body>
+</html>

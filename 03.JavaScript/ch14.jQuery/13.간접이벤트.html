@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 간접 연결</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').on('click', 'h1', function(e) {       // 모든 줄에서 객체 생성 가능
+                $('<h1></h1>').text($(this).text()).appendTo('body');
+            });
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h1>Header</h1>
+</body>
+</html>

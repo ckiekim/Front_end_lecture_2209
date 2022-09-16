@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 간접 연결</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // h1 태그를 클릭하면 새로 h1 태그를 생성해 추가
+            // 기존 태그에서는 이벤트 제거
+            const handler = function(e) {
+                $('<h1></h1>')
+                    .text($(this).text())
+                    .click(handler)
+                    .appendTo('body');
+                //$(this).off();
+                //$(this).off('click');
+                $(this).off('click', handler);
+            }
+            $('h1').on('click', handler);
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h1>Header</h1>
+</body>
+</html>
