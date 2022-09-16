@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.hide').click(function(e) {
+                $('div').hide();
+            });
+            $('.show').click(function(e) {
+                $('div').show();
+            });
+        })
+    </script>
+</head>
+<body style="margin: 50px;">
+    <div style="margin-bottom: 10px;">
+        <p>문서 준비 이벤트에는 여러 다중 이벤트를 정의할 수 있습니다.</p>
+        <p>버튼을 클릭하면 이벤트 처리를 합니다.</p>
+        <img src="https://picsum.photos/640/360">
+    </div>
+    <button class="hide">블록 감추기</button>
+    <button class="show">블록 보이기</button>
+</body>
+</html>
