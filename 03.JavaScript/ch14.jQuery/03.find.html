@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 선택</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // jQuery는 여러개의 노드에 대한 변경도 단일 문장으로 처리할 수 있음
+        $(document).ready(function() {
+            $('#fruits').find('.national').css('backgroundColor','yellow');
+            $('#food').find('.foreign').css('color','red');
+            $('.foreign').css('backgroundColor','beige');
+        });
+        // 자바스크립트에서는 여러개의 노드를 변경하려면 반복문을 사용해야 함
+        /* window.onload = function() {
+            const lis = document.querySelectorAll('.foreign');
+            for (let li of lis) {
+                li.style.backgroundColor = 'beige';
+            }
+        } */
+    </script>
+</head>
+<body style="margin: 50px;">
+    <ul id="fruits">내가 좋아하는 과일
+        <li class="national">사과</li>
+        <li class="foreign">바나나</li>
+        <li class="national">감</li>
+        <li class="foreign">파인애플</li>
+    </ul>
+    <hr>
+    <ul id="food">내가 좋아하는 음식
+        <li class="national">김치</li>
+        <li class="national">갈비찜</li>
+        <li class="foreign">파스타</li>
+    </ul>
+</body>
+</html>
