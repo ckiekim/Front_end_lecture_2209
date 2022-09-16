@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 조작</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#jq').text('css를 개별적으로 적용')
+                    .css('backgroundColor','beige')
+                    .css('fontSize', '30px')
+                    .css('color', 'magenta');
+
+            $('#jq2').text('css를 오브젝트 형태로 적용')
+                    .css({backgroundColor:'beige', fontSize:'30px', color:'red'});
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    <p id="jq"></p>
+    <p id="jq2"></p>
+</body>
+</html>
